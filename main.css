@@ -1,43 +1,28 @@
- @import url();
- html{
-
- }
- .navigation{
-    width:80%;
-    margin: 0 10% 0 10%;
-    background: green;
-    display: flex;
- }
-.navigation .features{
-    width:60%;
-    height: 100px;
-    display: flex;
+@import url();
+html{
+   margin: 0;
+   padding: 0;
 }
-.navigation .features ul{
-    font-size: 17.5px;
-    list-style: none;
-    cursor: pointer;
-
-   
-}
-.navigation .features ul li{
-    font-size:15.5px;
-    line-height: 20px;
-    display:none;
-}
-.navigation .features ul li:hover{
-    display:block;
-}
-.navigation .login_area{
-    width:40%;
+.div_head{}
+.navigation{}
+.features{
+    display:flex;
 }
 .features ul{
-    font-size: 15px;
-}
- .attribution {
-     font-size: 11px; text-align: center
-     }
-    .attribution a {
-         color: hsl(228, 45%, 44%);
-         }
+    list-style:none;
+    display:inline-block;
+    cursor: pointer;
   
+}
+.features ul li{
+   display:none;
+}
+.features ul > li{
+    background: blue;
+   
+}
+.features ul li:hover > li{
+    display: block;
+}
+
+
