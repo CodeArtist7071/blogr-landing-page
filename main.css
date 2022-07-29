@@ -34,7 +34,7 @@
     background-position: center;
    
 }
-.container{
+.inner_container{
     width:80%;
     margin: 0% 10% 0% 10%;
     display: flex;
@@ -306,33 +306,75 @@ height:200px;
     text-decoration:none;
 }
 @media screen and (max-width:394px) {
-  
-    .container{
+  .container{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    background:none;
+  }
+  .ham_area{
+    width:100%;
+    height:80px;
+    display: inline-block;
+    text-align: right;
+  }
+  .ham_area img{
+    margin:25px;
+
+   
+  }
+    .inner_container{
         width:80%;
+        height:fit-content;
         margin: 0% 10% 0% 10%;
-        display:block;
-        position:absolute;
+        display:none;
+        position:fixed;
         margin-top: 20px;
+        padding-bottom: 20px;
+        background:var(--white);
+        border-radius:20px;
+        box-shadow: 2px 5px 10px 5px rgba(255,255,255,0.4);
+        top:80px;
+
         
 
 
     }
+   
+   
     .left_corner{
-    display:none;
+       width:100%;
+       height: 50px;
+       position: absolute;
+       top: -80px;
+       display: flex;
     
+    }
+    .logo{
+        width:70%
+    }
+    .hamburger{
+        width: 30%;
+        text-align: right;
+    }
+    .hamburger img{
+        width:30px;
+        text-align: right;
+        margin:5px;
+        color: var(--light_red);
     }
     .left_side{
       width: 100%;
       height:fit-content;
       display:block;
       border-radius: 20px;
-      background:white;
+    
       
     }
     .product ,.company, .connect{
         margin: 30px 20px 0px 20px;
         color: var(--light_red);
-        font-size: 16.5px;
+        font-size: 18.5px;
         font-family:var(--custom_font) ;
         font-weight: 600;
         position: relative;
@@ -343,22 +385,26 @@ height:200px;
     }
     .left_side .product ul,.left_side .company ul,.left_side .connect ul{
         margin-top: 10px;
+        padding-bottom:10px;
         list-style:none;
-        font-size: 15.5px;
+        font-size: 17.5px;
         background:none;
         color: var(--light_red);
-        padding: 15px 18px;
-        border-radius:10px;
+        padding: 15px 15px;
+        border-radius: 0px;
         position:relative;
         display:none;
+        border: 2px solid var(--very_light_red);
        
     }
     .left_side .product:hover ul,.left_side .company:hover ul,.left_side .connect:hover ul{
         display: block;
         background: var(--white);
+        
     }
     .left_side .product ul li,.left_side .company ul li ,.left_side .connect ul li{
-        margin-top: 10px;
+        margin-top: 15px;
+        padding-bottom:15px;
         
     }
     .left_side .product ul li a,.left_side .company ul li a, .left_side .connect ul li a{
@@ -366,9 +412,11 @@ height:200px;
         color: var(--light_red);
     } 
     .right_side{
-     width: 100%;
-     height: 100px;
+     width: 90%;
+     height:fit-content;
+     margin: 150px 5% 0 5%;
      display:block;
+     padding-top: 20px;
      
     }
     
@@ -377,19 +425,19 @@ height:200px;
         height:40px;
         border-radius: 30px;
         border-style: none;
-        margin: 10px 10px 10px 10px;
-        font-size: 14.5px;
-        color:var(--white);
+        margin: 10px 10% 10px 10%;
+        font-size: 17.5px;
+        color:var(--light_red);
         font-weight: 600;
         
     }
     .login:hover{
-        background:rgba(255,255,255,0.2);
-        color: var(--white);
+        color: var(--light_red);
+        border:2px solid var(--light_red);
     }
     .signup:hover{
-        background: var(--white);
-        color: var(--very_light_red);
+        background: var(--light_red);
+        color: var(--white);
       
     }
     .heading{

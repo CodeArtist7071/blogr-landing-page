@@ -21,15 +21,21 @@
       <!----this div is only for background color purpose-->
       <div class="header_foreground_img">
         <!-----this div is only for the image purpose(background image)------>
-        <div class="container">
-          <div class="left_corner"></div>
+        <div class="ham_area"><img id="ham" href="javascript.void(0);" onclick="myfunction()" src="images/icon-hamburger.svg" alt="" srcset=""></div>
+        <div id="container" class="container">
+         
+          <div id= "togg" class="inner_container">
+            <div class="left_corner">
+              <div class="logo"></div>
+              <div class="hamburger" href="javascript.void(0);" onclick="myfunction()"><img src="images/icon-close.svg" alt=""></div>
+            </div>
           <div class="left_side">
             <div class="product">
               Product
               <ul>
-                <li><a id="tri" class="link_hdr" href="">Overview</a></li>
-                <li><a id="tri" class="link_hdr" href="">Pricing</a></li>
-                <li><a id="tri" class="link_hdr" href="">Marketplace</a></li>
+                <li><a class="link_hdr" href="">Overview</a></li>
+                <li><a class="link_hdr" href="">Pricing</a></li>
+                <li><a class="link_hdr" href="">Marketplace</a></li>
                 <li><a class="link_hdr" href="">Features</a></li>
                 <li><a class="link_hdr" href="">Integrations</a></li>
               </ul>
@@ -56,6 +62,7 @@
             <button class="login">Login</button>
             <button class="signup">Sign Up</button>
           </div>
+        </div>
         </div>
         <div class="heading">
           <h1>A modern publishing platform</h1>
