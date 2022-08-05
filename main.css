@@ -46,7 +46,7 @@
     height:5px;
     margin:2px;
     border-radius: 3px;
-    background-color: black;
+    background-color:white;
     display:none;
 }
 .logo{
@@ -340,7 +340,7 @@ height:200px;
         transform: translateX(-250%);
         transition:transform .5s ease-in;
         display:block;
-        background: white;
+        background:var(--light_red);
         position: absolute;
         top:0;
         
