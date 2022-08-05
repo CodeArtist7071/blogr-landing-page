@@ -340,7 +340,7 @@ height:200px;
         transform: translateX(-250%);
         transition:transform .5s ease-in;
         display:block;
-        background: white;
+        background:var(--light_red);
         position: absolute;
         top:0;
         
@@ -407,7 +407,7 @@ height:200px;
     }
     .nav-links li a{
         text-align: center;
-        color: brown;
+        color:white;
         text-decoration: none;
         transition:transform .5s ease-in;
 
@@ -427,7 +427,7 @@ height:200px;
     }
      .nav-sublinks .sub{
         list-style: none;
-        color: green;
+        color:white;
         display: none;
         font-size: 17.5px;
     }
@@ -440,7 +440,7 @@ height:200px;
         width:80%;
         margin: 0 10% 0 10%;
         display: block;
-        color: brown;
+        color:var(--light_red);
     }
     .btns .btn{
         width:40%;
@@ -448,7 +448,7 @@ height:200px;
         margin:  0 30% 10px 30%;
         border:none;
         border-radius:30px;
-        background:red;
+        background:var(--white);
         color:white;
         display:block;
         text-align: center;
@@ -734,7 +734,7 @@ height:200px;
         height:5px;
         margin:2px;
         border-radius: 3px;
-        background-color: black;
+        background-color:var(--white);
         display: block;
         cursor: pointer;
 
@@ -783,7 +783,7 @@ height:200px;
     }
     .nav-links li a{
         text-align: center;
-        color: brown;
+        color:white;
         text-decoration: none;
         transition:transform .5s ease-in;
 
@@ -803,7 +803,7 @@ height:200px;
     }
      .nav-sublinks .sub{
         list-style: none;
-        color: green;
+        color: white;
         display: none;
         font-size: 17.5px;
         
@@ -826,8 +826,8 @@ height:200px;
         margin:  0 30% 10px 30%;
         border:none;
         border-radius:30px;
-        background:red;
-        color:white;
+        background:var(--white);
+        color:var(--light_red);
         display:block;
         text-align: center;
         justify-content: center;
