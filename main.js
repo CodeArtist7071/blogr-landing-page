@@ -1,15 +1,9 @@
-function myfunction(){
-    var background = document.getElementById("container");
-    var hamburger = document.getElementById("ham");
-    var toggle = document.getElementById("togg");
-    if(toggle.style.display === "none"){
-        toggle.style.display = "block"
-        hamburger.style.display = "none"
-        background.style.background = "rgba(12,13,14,.5)";
-    }else{
-        toggle.style.display = "none"
-        hamburger.style.display = "inline-block"
-        background.style.background = "none"
-
-    };
+const navSlide =()=>{
+    const humburger = document.querySelector('.hamburger');
+    const nav =  document.querySelector('.nav');
+     humburger.addEventListener('click', () =>{
+       nav.classList.toggle('nav-active')
+       humburger.classList.toggle('toggle')
+     });
 }
+navSlide();
