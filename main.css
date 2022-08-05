@@ -382,6 +382,7 @@ height:200px;
         width:100%;
         margin-top:100px;
         display:block;
+        margin-bottom: 50px;
       
     }
     .navbar .div-links{
@@ -403,6 +404,7 @@ height:200px;
         margin-block-start: 0px;
         padding-inline-start: 0px;
         font-size: 20.5px;
+        
        
     }
     .nav-links li a{
@@ -422,7 +424,7 @@ height:200px;
     
     }
     
-    .nav-links li a:hover{
+    .nav-links li a:hover,.nav-links li a:active,.nav-active li a:focus-within{
         display:block;
     }
      .nav-sublinks .sub{
