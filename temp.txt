@@ -1,0 +1,277 @@
+    <div id="container" class="container">
+         
+          <div id= "inner_container" class="inner_container">
+            <div class="left_corner">
+              <div class="logo"></div>
+              <div class="hamburger" href="javascript.void(0);" onclick="myfunction()"><img src="images/icon-close.svg" alt=""></div>
+            </div>
+          <div class="left_side">
+            <div class="product">
+              Product
+              <ul>
+                <li><a class="link_hdr" href="">Overview</a></li>
+                <li><a class="link_hdr" href="">Pricing</a></li>
+                <li><a class="link_hdr" href="">Marketplace</a></li>
+                <li><a class="link_hdr" href="">Features</a></li>
+                <li><a class="link_hdr" href="">Integrations</a></li>
+              </ul> 
+            </div>
+            <div class="company">
+              Company
+              <ul>
+                <li><a class="link_hdr" href="">About</a></li>
+                <li><a class="link_hdr" href="">Team</a></li>
+                <li><a class="link_hdr" href="">Blog</a></li>
+                <li><a class="link_hdr" href="">Careers</a></li>
+              </ul>
+            </div>
+            <div class="connect">
+              Connect
+              <ul>
+                <li><a class="link_hdr" href="">Contact</a></li>
+                <li><a class="link_hdr" href="">Newsletter</a></li>
+                <li><a class="link_hdr" href="">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right_side">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+          </div>
+        </div>
+        </div>
+
+
+
+
+   destop version css layout--------------------------------
+
+        .inner_container{
+    width:80%;
+    height:fit-content;
+    margin: 0% 10% 0% 10%;
+    display: flex;
+    position:relative;
+    background: none;
+    padding-bottom: 20px;
+    border-radius:0px;
+    top:0px;  
+}
+.ham_area{
+    display:none;
+}
+.hamburger{
+    display: none;
+}
+.left_corner{
+width:10%;
+height:80px;
+
+}
+.left_side{
+  width: 60%;
+  height: 80px;
+  display: flex;
+  float: left;
+  
+}
+.product ,.company, .connect{
+    margin: 30px 20px 0px 20px;
+    color: var(--white);
+    font-size: 16.5px;
+    font-family:var(--custom_font) ;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+
+}
+.left_side .product ul,.left_side .company ul,.left_side .connect ul{
+    margin-top: 10px;
+    list-style:none;
+    font-size: 15.5px;
+    background: var(--white);
+    color: var(--light_red);
+    padding: 15px 18px;
+    border-radius:10px;
+    position: absolute;
+    display: none;
+}
+.left_side .product:hover ul,.left_side .company:hover ul,.left_side .connect:hover ul{
+    display: block;
+}
+.left_side .product ul li,.left_side .company ul li ,.left_side .connect ul li{
+    margin-top: 10px;
+    
+}
+.left_side .product ul li a,.left_side .company ul li a, .left_side .connect ul li a{
+    text-decoration:none;
+    color: var(--light_red);
+} 
+.right_side{
+ width: 30%;
+ height:80px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.login , .signup{
+    width: 100px;
+    height:40px;
+    border-radius: 30px;
+    border-style: none;
+    margin: 10px 10px 10px 10px;
+    font-size: 14.5px;
+    background: none;
+    color:var(--white);
+    font-weight: 600;
+    
+}
+.login:hover{
+    background:rgba(255,255,255,0.2);
+    color: var(--white);
+}
+.signup:hover{
+    background: var(--white);
+    color: var(--very_light_red);
+  
+}
+
+
+
+
+
+mobile version layout--------------------------------
+
+ .container{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0; 
+  }
+  .ham_area{
+    width:100%;
+    height:80px;
+    display: inline-block;
+    text-align: right;
+  }
+  .ham_area img{
+    margin:25px;
+  }
+    .inner_container{
+        width:80%;
+        height:fit-content;
+        margin: 0 10% 0% 10%;
+        display:none;
+        position:fixed;
+        margin-top: -10px;
+        padding-bottom: 20px;
+        background:var(--white);
+        border-radius:10px;
+        top:120px;
+    }
+   
+   
+    .left_corner{
+       width:100%;
+       height: 50px;
+       position: absolute;
+       top: -80px;
+       display: flex;
+    
+    }
+    .logo{
+        width:70%
+    }
+    .hamburger{
+        width: 30%;
+        text-align: right;
+        display: block;
+    }
+    .hamburger img{
+        width:30px;
+        text-align: right;
+        margin:5px;
+        color: var(--light_red);
+    
+    }
+    .ham:active .inner_container{
+       display:block;
+    }
+    .left_side{
+      width: 100%;
+      height:fit-content;
+      display:block;
+      border-radius: 20px;
+    
+      
+    }
+    .product ,.company, .connect{
+        margin: 30px 20px 0px 20px;
+        color: var(--light_red);
+        font-size: 18.5px;
+        font-family:var(--custom_font) ;
+        font-weight: 600;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        
+    
+    }
+    .left_side .product ul,.left_side .company ul,.left_side .connect ul{
+        margin-top: 10px;
+        padding-bottom:10px;
+        list-style:none;
+        font-size: 17.5px;
+        background:none;
+        color: var(--white);
+        padding: 15px 15px;
+        border-radius: 0px;
+        position:relative;
+        display:none;
+        border: 2px solid var(--very_light_red);
+       
+    }
+    .left_side .product:hover ul,.left_side .company:hover ul,.left_side .connect:hover ul{
+        display: block;
+        background: var(--white);
+        
+    }
+    .left_side .product ul li,.left_side .company ul li ,.left_side .connect ul li{
+        margin-top: 15px;
+        padding-bottom:15px;
+        
+    }
+    .left_side .product ul li a,.left_side .company ul li a, .left_side .connect ul li a{
+        text-decoration:none;
+        color: var(--light_red);
+    } 
+    .right_side{
+     width: 90%;
+     height:fit-content;
+     margin: 150px 5% 0 5%;
+     display:block;
+     padding-top: 20px;
+     
+    }
+    
+    .login , .signup{
+        width: 80%;
+        height:40px;
+        border-radius: 30px;
+        border-style: none;
+        margin: 10px 10% 10px 10%;
+        font-size: 17.5px;
+        color:var(--light_red);
+        font-weight: 600;
+        
+    }
+    .login:hover{
+        color: var(--light_red);
+        border:2px solid var(--light_red);
+    }
+    .signup:hover{
+        background: var(--light_red);
+        color: var(--white);
+      
+    }

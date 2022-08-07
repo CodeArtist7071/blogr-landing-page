@@ -1,0 +1,227 @@
+.nav{
+    margin-top:0px;
+    line-height:40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hamburger{
+   
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.hamburger .line{
+    width:25px;
+    height:5px;
+    margin:2px;
+    border-radius: 3px;
+    background-color: black;
+    display:none;
+}
+.logo{
+    text-align:left;
+}
+.navbar{
+    width: 50%;
+    display: flex;
+}
+.navbar .div-links{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .nav-links{
+    width: 90%;
+    height:fit-content;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
+    font-size: 20.5px;
+}
+.nav-links li a{
+    text-align: center;
+    color: brown;
+    text-decoration: none;
+    margin-left:20px;
+    margin-right:20px;
+
+}
+
+.nav-links .nav-sublinks {
+    width:70%;
+    height: fit-content;
+    margin:0 15% 0 15%;
+    border-top:2px solid red;
+
+}
+
+.nav-links li a:hover{
+    display:block;
+    
+}
+ .nav-sublinks .sub{
+    list-style: none;
+    color: green;
+    display: none;
+    font-size: 17.5px;
+
+}
+.nav-sublinks:hover .sub,.nav-sublinks:focus-within .sub{
+  display: block;
+}
+
+.btns{
+    width:50%;
+    display:flex;
+    float: right;
+    flex-direction:row-reverse;
+    color: brown;
+    margin-left:15%;
+}
+.btns .btn{
+    width:200px;
+    height:50px;
+    margin:  0 10px 10px 0%;
+    border:none;
+    border-radius:30px;
+    background:red;
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width:700px){
+    .nav{
+        margin-top:100px; /*commit this line in blogr landing page*/
+        line-height:40px;
+        display: block;
+        justify-content: center;
+        width:100%;
+        transform: translateX(-250%);
+        transition:transform .5s ease-in;
+        display:block;
+        
+        
+    }
+   
+    .hamburger{
+        position:fixed;
+        right: 10px;
+        top: 10px;
+    }
+    .hamburger div{
+        width:25px;
+        height:5px;
+        margin:2px;
+        border-radius: 3px;
+        background-color: black;
+        display: block;
+        cursor: pointer;
+
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,5px);
+        transition:transform .2s ease-in-out ;
+    }
+    .toggle .line2{
+        opacity:0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-5px);
+        transition:transform .2s ease-in-out ;
+    }
+    .nav-active{
+        transform: translateY(0%);
+    }
+    .logo{
+        text-align: center;
+    }
+    .navbar{
+        width:100%;
+        display:block;
+      
+    }
+    .navbar .div-links{
+        width:40%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30% 0 30%;
+        
+    }
+     .nav-links{
+        width: 90%;
+        height:fit-content;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-block-start: 0px;
+        padding-inline-start: 0px;
+        font-size: 20.5px;
+    }
+    .nav-links li a{
+        text-align: center;
+        color: brown;
+        text-decoration: none;
+        transition:transform .5s ease-in;
+
+    
+    }
+    
+    .nav-links .nav-sublinks {
+        width:70%;
+        height: fit-content;
+        margin:0 15% 0 15%;
+        border-top:2px solid red;
+    
+    }
+    
+    .nav-links li a:hover{
+        display:block;
+    }
+     .nav-sublinks .sub{
+        list-style: none;
+        color: green;
+        display: none;
+        font-size: 17.5px;
+        
+        
+    }
+    
+    .nav-sublinks:hover .sub,.nav-sublinks:focus-within .sub{
+      display: block;
+    }
+    
+    .btns{
+        width:80%;
+        margin: 0 10% 0 10%;
+        display: block;
+        color: brown;
+    }
+    .btns .btn{
+        width:40%;
+        height:40px;
+        margin:  0 30% 10px 30%;
+        border:none;
+        border-radius:30px;
+        background:red;
+        color:white;
+        display:block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+}
